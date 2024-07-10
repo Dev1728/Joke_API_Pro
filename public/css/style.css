@@ -69,3 +69,173 @@ input{
     padding: 5px 10px;
     border-radius: 10px;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #020202 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:2px;
+    border: 3px solid white;
+    background: url(/img/1_azr-TaHgPwIyVwekAx2usA.jpg);
+    background-size: cover;
+}
+
+.container::before{
+    background-color: rgba(0.4, 0.5, 0.5, 0.5);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.joke-api{
+    /* background: #fff; */
+    background-color: #020202;
+    width:60%;
+    padding: 25px 35px;
+    text-align:left;
+    z-index: 1;
+    border: 2px solid rgba(255,255 ,255,.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.joke{
+    /* background: url(../img/UkUfNvJ.jpg) center; */
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    margin: 10px 0px;
+    color: #05c0a1;
+    font-weight: 700;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+input{
+    width: 100%;
+    padding: 7px 15px;
+    height: 50px;
+    font-size: 18px;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all .5s ease;
+}
+input:hover{
+    border: 2px solid #0d3b5e;
+    
+}
+
+.input{
+    margin: 15px 0px;
+    
+}
+.idinput{
+    position:relative;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+label{
+    margin-left: 1em;
+    font-size:18px;
+    font-weight: 700;
+}
+.routes{
+    
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+button {
+    width: 5.5em;
+    position: relative;
+    height: 3em;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 2px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  
+  button::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #020202;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  button::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #020202;
+    transition: 0.5s;
+  }
+  
+  button:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  button:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }
+  #route-lable{
+     margin-bottom: 10px;
+     font-size:20px;
+     font-weight: 700;
+  }
+
+  @media (max-width:991px){
+    .joke-api{
+        height:auto;
+    }
+    input{
+        font-size: 15px;
+    }
+    label{
+        font-size: 15px;
+    }
+    button{
+        width: 5em;
+        height: 2.5em;
+        margin-bottom: 7px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+  }
